@@ -4,12 +4,12 @@ using CounterStrikeSharp.API.Core.Attributes;
 
 namespace CS2_Remove_Map_Weapons
 {
-	[MinimumApiVersion(65)]
+	[MinimumApiVersion(167)]
 	public partial class CS2_Remove_Map_Weapons : BasePlugin
 	{
 		public override string ModuleName => "Remove Map Weapons";
-		public override string ModuleVersion => "1.0.0";
-		public override string ModuleAuthor => "Kus (https://steamcommunity.com/id/kus/)";
+		public override string ModuleVersion => "1.0.1";
+		public override string ModuleAuthor => "Kus (https://github.com/kus)";
 		public override string ModuleDescription => "Remove the weapons from the map";
 
 		public override void Load(bool hotReload)
@@ -17,7 +17,6 @@ namespace CS2_Remove_Map_Weapons
 			Log(PluginInfo());
 			Log(ModuleDescription);
 			RegisterEventHandlers();
-			RemoveMapWeapons();
 		}
 
 		void RemoveMapWeapons()
